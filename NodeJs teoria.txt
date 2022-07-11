@@ -1,0 +1,75 @@
+Crear un proyecto de NodeJs con el GitBash/Consola de Comandos
+
+Ingresamos a la ruta del proyecto e ingresamos el comando
+
+npm init -> Comando para iniciar un proyecto de NodeJs y crear un
+package.json donde se encuentra la configuración/dependencias
+del proyecto.
+
+Luego ingresamos el nombre -> api-rest-nodejs 
+la version por defecto
+una descripcion
+Entry point será un index.js como ejemplo
+test command
+...
+autor -> mi nombre
+licencia -> MIT
+y le damos a YES
+
+CON ESO CREAMOS EL PROYECTO, AUN FALTAN LAS DEPENDENCIAS
+
+Instalar dependencias del proyecto
+
+Comando npm install express --save
+
+npm install -> Instalar paquetes y librerias en el proyecto de Node
+express -> Framework para trabajar con el protocolo HTTP, nos permite definir rutas,
+tener un sistema de rutas, recibir peticiones en http, crear acciones, metodos, etc
+--save -> Guardará la dependencia en mi proyecto actual.
+
+npm install body-parser --save
+
+BodyParser -> Paquete que sirve para convertir las peticiones que hacemos al backend
+a un objeto Json usable por Javascript
+
+npm install connect-multiparty --save
+
+Connect multiparty -> Permite subir archivos a mi backend, poder trabajar con el protocolo Files, que 
+sirve para recoger ficheros y guardarlos en una carpeta de mi servidor.
+Importante para subir imagenes u otros archivos
+
+npm install mongoose --save
+
+mongoose -> Libreria que es un ORM para trabajar con MongoDb, permite crear modelos
+entidades y trabajar con metodos que ya vienen hechos y que son faciles de usar
+-------------------------------------------------------------------------------------
+
+Dependencia que solo se va a funcionar en desarrollo, es decir en local.
+Cuando lo subamos a un servidor, ésta dependencia no debe tomarse en cuenta.
+
+npm install nodemon --save-dev
+
+nodemon -> Permite refrescar automaticamente el servidor de nodeJs, cada vez que 
+se realiza un cambio en el codigo. 
+
+------------------------------------------------------------------------------------
+En el package.json agregamos un start el cual va a lanzar el index.js cada vez que 
+utilicemos el 
+
+npm start
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
